@@ -1,9 +1,6 @@
 <script>
-    // import Carousel from 'svelte-carousel'
-
     /** @type {import('./$types').PageData} */
     export let data;
-
 </script>
 
 <section id="article">
@@ -25,25 +22,6 @@
             
         </article>
     {/each}
-    <!-- <Carousel>
-        <div>
-            <figure>
-                <img src="https://picsum.photos/1920/1080.webp?random=1" alt="">
-            </figure>
-        </div>
-        <div>
-            <figure>
-                <img src="https://picsum.photos/1920/1080.webp?random=2" alt="">
-            </figure>
-        </div>
-        <div>
-            <figure>
-                <img src="https://picsum.photos/1920/1080.webp?random=3" alt="">
-            </figure>
-        </div>
-      </Carousel> -->
-
-    
 </section>
 <style>
     .post-title{
