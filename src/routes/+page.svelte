@@ -25,7 +25,7 @@
     {/each}
 </section>
 <style>
-    /* .post-title{
+    .post-title{
         font-size: 24px;
         margin-bottom: 10px;
     }
@@ -38,5 +38,5 @@
     .post-desc{
         font-size: 20px;
         color: #ccc;
-    } */
+    }
 </style>
