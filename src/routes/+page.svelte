@@ -1,10 +1,11 @@
 <script>
     /** @type {import('./$types').PageData} */
-    export let data;
+    // export let data;
 </script>
 
 <section id="article">
-    {#each data.items.articles as item }
+    <h1>Ini Halaman Home</h1>
+    <!-- {#each data.items.articles as item }
         <article class="post-container">
             <div class="grid">
                 <div>
@@ -21,10 +22,10 @@
             </div>
             
         </article>
-    {/each}
+    {/each} -->
 </section>
 <style>
-    .post-title{
+    /* .post-title{
         font-size: 24px;
         margin-bottom: 10px;
     }
@@ -37,5 +38,5 @@
     .post-desc{
         font-size: 20px;
         color: #ccc;
-    }
+    } */
 </style>
