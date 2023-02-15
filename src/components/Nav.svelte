@@ -2,14 +2,14 @@
     import Icon from '@iconify/svelte';
     import jQuery from 'jquery';
 
-    let search_text = "";
+    // let search_text = "";
     const jq = jQuery;
 
-    // $: if(search_text == ""){
-    //     jq(".post-container").show();
-    // }
+    // // $: if(search_text == ""){
+    // //     jq(".post-container").show();
+    // // }
 
-    // @ts-ignore
+    // // @ts-ignore
     // jq.expr[':'].icontains = function(a, i, m) {
     //     return jq(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
     // };
@@ -18,11 +18,11 @@
         jq("#search-input").toggle("slow").focus();
     }
 
-    function search(){
-        if(search_text.length > 3){
-            jq(`.post-title:not(:contains(${search_text}))`).parent().parent().parent().hide()
-        }
-    }
+    // function search(){
+    //     if(search_text.length > 3){
+    //         jq(`.post-title:not(:contains(${search_text}))`).parent().parent().parent().hide()
+    //     }
+    // }
 </script>
 <nav>
     <ul>
@@ -35,7 +35,7 @@
                 <button id="search-button" on:click={showSearchBar}>
                     <Icon icon="ic:baseline-search"  />
                 </button>
-                <input type="text" placeholder="Search..." id="search-input" on:keyup={search} bind:value={search_text}>
+                <input type="text" placeholder="Search..." id="search-input" >
             </div>
         </li>
       
